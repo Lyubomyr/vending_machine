@@ -1,0 +1,9 @@
+[
+  {"title": "25¢", "cents": 25, "amount": 30},
+  {"title": "50¢", "cents": 50, "amount": 25},
+  {"title": "1$", "cents": 100, "amount": 20},
+  {"title": "2$", "cents": 200, "amount": 15},
+  {"title": "3$", "cents": 300, "amount": 10},
+  {"title": "5$", "cents": 500, "amount": 5}
+]
+

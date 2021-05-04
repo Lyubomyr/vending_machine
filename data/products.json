@@ -1,0 +1,5 @@
+[
+  { "title": "Coca-Cola", "price": "1.30$", "price_in_cents": 130, "amount": 1 },
+  { "title": "Sprite", "price": "1.15$", "price_in_cents": 115, "amount": 8 },
+  { "title": "Bounty", "price": "2.5$", "price_in_cents": 250, "amount": 2 }
+]
