@@ -1,3 +1,4 @@
+require 'json'
 require_relative '../models/product.rb'
 require_relative '../models/coin.rb'
 

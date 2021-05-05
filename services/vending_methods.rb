@@ -20,7 +20,7 @@ module VendingMethods
         print_message :product_info, params: params
       end
 
-      product_i = gets.to_i
+      product_i = read_input.to_i
       product = products[product_i-1] if product_i > 0
       product = nil if product && product.amount == 0
 
@@ -38,7 +38,7 @@ module VendingMethods
     while deposit_cents < product.price_in_cents do
       print_message :more_coins, params: {amount: product.price_in_cents - deposit_cents}
 
-      coin_i = gets.to_i
+      coin_i = read_input.to_i
       deposit_cents += COINS[coin_i-1].cents if coin_i.between?(1, COINS.count)
     end
     deposit_cents
@@ -66,5 +66,11 @@ module VendingMethods
 
   def decrease_product(products, product_i)
     products.map.with_index {|product, i| i == product_i ? product.decrease! : product}
+  end
+
+private
+
+  def read_input
+    STDIN.gets
   end
 end
